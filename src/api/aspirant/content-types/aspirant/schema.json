@@ -26,6 +26,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::document.document"
+    },
+    "schoolProcedence": {
+      "type": "text",
+      "required": true
     }
   }
 }
