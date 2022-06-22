@@ -4,7 +4,8 @@
   "info": {
     "singularName": "request",
     "pluralName": "requests",
-    "displayName": "request"
+    "displayName": "request",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,7 +29,8 @@
     "aspirant": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::aspirant.aspirant"
+      "target": "api::aspirant.aspirant",
+      "mappedBy": "request"
     }
   }
 }

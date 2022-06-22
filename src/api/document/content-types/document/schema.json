@@ -47,7 +47,8 @@
     "aspirant": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::aspirant.aspirant"
+      "target": "api::aspirant.aspirant",
+      "mappedBy": "document"
     }
   }
 }

@@ -15,31 +15,36 @@
     "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
-    },
-    "address": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::address.address"
-    },
-    "document": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::document.document"
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "aspirant"
     },
     "schoolProcedence": {
       "type": "text",
       "required": true
     },
-    "request": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::request.request"
-    },
     "specialtyOption": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::specialty-user.specialty-user"
+      "target": "api::specialty-user.specialty-user",
+      "inversedBy": "aspirant"
+    },
+    "request": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::request.request",
+      "inversedBy": "aspirant"
+    },
+    "document": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::document.document",
+      "inversedBy": "aspirant"
+    },
+    "address": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address",
+      "inversedBy": "aspirant"
     }
   }
 }

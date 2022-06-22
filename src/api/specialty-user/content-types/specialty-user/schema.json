@@ -4,7 +4,8 @@
   "info": {
     "singularName": "specialty-user",
     "pluralName": "specialty-users",
-    "displayName": "SpecialtyUser"
+    "displayName": "SpecialtyUser",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,12 +15,14 @@
     "aspirant": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::aspirant.aspirant"
+      "target": "api::aspirant.aspirant",
+      "mappedBy": "specialtyOption"
     },
     "specialty": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::specialty.specialty"
+      "relation": "manyToOne",
+      "target": "api::specialty.specialty",
+      "inversedBy": "specialty_users"
     }
   }
 }

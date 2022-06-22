@@ -19,7 +19,8 @@
     "specialty_users": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::specialty-user.specialty-user"
+      "target": "api::specialty-user.specialty-user",
+      "mappedBy": "specialty"
     }
   }
 }
