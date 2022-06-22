@@ -4,7 +4,8 @@
   "info": {
     "singularName": "specialty",
     "pluralName": "specialties",
-    "displayName": "Specialty"
+    "displayName": "Specialty",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,11 @@
     "description": {
       "type": "text",
       "required": true
+    },
+    "specialty_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::specialty-user.specialty-user"
     }
   }
 }

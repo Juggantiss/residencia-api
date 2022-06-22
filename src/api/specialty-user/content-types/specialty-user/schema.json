@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "specialty_users",
+  "info": {
+    "singularName": "specialty-user",
+    "pluralName": "specialty-users",
+    "displayName": "SpecialtyUser"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aspirant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::aspirant.aspirant"
+    },
+    "specialty": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::specialty.specialty"
+    }
+  }
+}

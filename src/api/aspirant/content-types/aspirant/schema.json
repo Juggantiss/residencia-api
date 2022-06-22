@@ -30,6 +30,11 @@
     "schoolProcedence": {
       "type": "text",
       "required": true
+    },
+    "request": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::request.request"
     }
   }
 }
