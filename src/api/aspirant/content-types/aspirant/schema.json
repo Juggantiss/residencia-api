@@ -35,6 +35,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::request.request"
+    },
+    "specialtyOption": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::specialty-user.specialty-user"
     }
   }
 }
