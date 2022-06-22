@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aspirants",
+  "info": {
+    "singularName": "aspirant",
+    "pluralName": "aspirants",
+    "displayName": "Aspirant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "address": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address"
+    },
+    "document": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::document.document"
+    }
+  }
+}
