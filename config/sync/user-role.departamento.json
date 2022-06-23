@@ -1,0 +1,70 @@
+{
+  "name": "Departamento",
+  "description": "Rol para el usuario del departamento",
+  "type": "departamento",
+  "permissions": [
+    {
+      "action": "api::address.address.find"
+    },
+    {
+      "action": "api::aspirant.aspirant.find"
+    },
+    {
+      "action": "api::aspirant.aspirant.findOne"
+    },
+    {
+      "action": "api::document.document.find"
+    },
+    {
+      "action": "api::document.document.findOne"
+    },
+    {
+      "action": "api::request.request.find"
+    },
+    {
+      "action": "api::request.request.findOne"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.find"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.findOne"
+    },
+    {
+      "action": "api::specialty.specialty.find"
+    },
+    {
+      "action": "api::specialty.specialty.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
+    },
+    {
+      "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}
