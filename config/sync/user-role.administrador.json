@@ -1,0 +1,187 @@
+{
+  "name": "Administrador",
+  "description": "Rol del administrador de todo el sistema",
+  "type": "administrador",
+  "permissions": [
+    {
+      "action": "api::address.address.create"
+    },
+    {
+      "action": "api::address.address.delete"
+    },
+    {
+      "action": "api::address.address.find"
+    },
+    {
+      "action": "api::address.address.findOne"
+    },
+    {
+      "action": "api::address.address.update"
+    },
+    {
+      "action": "api::aspirant.aspirant.create"
+    },
+    {
+      "action": "api::aspirant.aspirant.delete"
+    },
+    {
+      "action": "api::aspirant.aspirant.find"
+    },
+    {
+      "action": "api::aspirant.aspirant.findOne"
+    },
+    {
+      "action": "api::aspirant.aspirant.update"
+    },
+    {
+      "action": "api::document.document.create"
+    },
+    {
+      "action": "api::document.document.delete"
+    },
+    {
+      "action": "api::document.document.find"
+    },
+    {
+      "action": "api::document.document.findOne"
+    },
+    {
+      "action": "api::document.document.update"
+    },
+    {
+      "action": "api::request.request.create"
+    },
+    {
+      "action": "api::request.request.delete"
+    },
+    {
+      "action": "api::request.request.find"
+    },
+    {
+      "action": "api::request.request.findOne"
+    },
+    {
+      "action": "api::request.request.update"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.create"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.delete"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.find"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.findOne"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.update"
+    },
+    {
+      "action": "api::specialty.specialty.create"
+    },
+    {
+      "action": "api::specialty.specialty.delete"
+    },
+    {
+      "action": "api::specialty.specialty.find"
+    },
+    {
+      "action": "api::specialty.specialty.findOne"
+    },
+    {
+      "action": "api::specialty.specialty.update"
+    },
+    {
+      "action": "plugin::content-type-builder.components.getComponent"
+    },
+    {
+      "action": "plugin::content-type-builder.components.getComponents"
+    },
+    {
+      "action": "plugin::content-type-builder.content-types.getContentType"
+    },
+    {
+      "action": "plugin::content-type-builder.content-types.getContentTypes"
+    },
+    {
+      "action": "plugin::email.email.send"
+    },
+    {
+      "action": "plugin::i18n.locales.listLocales"
+    },
+    {
+      "action": "plugin::upload.content-api.destroy"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
+    },
+    {
+      "action": "plugin::users-permissions.role.createRole"
+    },
+    {
+      "action": "plugin::users-permissions.role.deleteRole"
+    },
+    {
+      "action": "plugin::users-permissions.role.find"
+    },
+    {
+      "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.role.updateRole"
+    },
+    {
+      "action": "plugin::users-permissions.user.count"
+    },
+    {
+      "action": "plugin::users-permissions.user.create"
+    },
+    {
+      "action": "plugin::users-permissions.user.destroy"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    },
+    {
+      "action": "plugin::users-permissions.user.update"
+    }
+  ]
+}

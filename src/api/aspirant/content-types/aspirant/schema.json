@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aspirants",
+  "info": {
+    "singularName": "aspirant",
+    "pluralName": "aspirants",
+    "displayName": "Aspirant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "aspirant"
+    },
+    "schoolProcedence": {
+      "type": "text",
+      "required": true
+    },
+    "specialtyOption": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::specialty-user.specialty-user",
+      "inversedBy": "aspirant"
+    },
+    "request": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::request.request",
+      "inversedBy": "aspirant"
+    },
+    "document": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::document.document",
+      "inversedBy": "aspirant"
+    },
+    "address": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address",
+      "inversedBy": "aspirant"
+    }
+  }
+}

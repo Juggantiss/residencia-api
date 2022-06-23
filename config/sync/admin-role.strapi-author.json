@@ -1,0 +1,356 @@
+{
+  "name": "Author",
+  "code": "strapi-author",
+  "description": "Authors can manage the content they have created.",
+  "permissions": [
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::address.address",
+      "properties": {
+        "fields": [
+          "street",
+          "number",
+          "suburb",
+          "municipality",
+          "zipCode",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::address.address",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::address.address",
+      "properties": {
+        "fields": [
+          "street",
+          "number",
+          "suburb",
+          "municipality",
+          "zipCode",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::address.address",
+      "properties": {
+        "fields": [
+          "street",
+          "number",
+          "suburb",
+          "municipality",
+          "zipCode",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::aspirant.aspirant",
+      "properties": {
+        "fields": [
+          "user",
+          "schoolProcedence",
+          "specialtyOption",
+          "request",
+          "document",
+          "address"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::aspirant.aspirant",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::aspirant.aspirant",
+      "properties": {
+        "fields": [
+          "user",
+          "schoolProcedence",
+          "specialtyOption",
+          "request",
+          "document",
+          "address"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::aspirant.aspirant",
+      "properties": {
+        "fields": [
+          "user",
+          "schoolProcedence",
+          "specialtyOption",
+          "request",
+          "document",
+          "address"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::document.document",
+      "properties": {
+        "fields": [
+          "certificate",
+          "birthCertificate",
+          "curp",
+          "photo",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::document.document",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::document.document",
+      "properties": {
+        "fields": [
+          "certificate",
+          "birthCertificate",
+          "curp",
+          "photo",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::document.document",
+      "properties": {
+        "fields": [
+          "certificate",
+          "birthCertificate",
+          "curp",
+          "photo",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::request.request",
+      "properties": {
+        "fields": [
+          "status",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::request.request",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::request.request",
+      "properties": {
+        "fields": [
+          "status",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::request.request",
+      "properties": {
+        "fields": [
+          "status",
+          "aspirant"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::specialty-user.specialty-user",
+      "properties": {
+        "fields": [
+          "aspirant",
+          "specialty"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::specialty-user.specialty-user",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::specialty-user.specialty-user",
+      "properties": {
+        "fields": [
+          "aspirant",
+          "specialty"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::specialty-user.specialty-user",
+      "properties": {
+        "fields": [
+          "aspirant",
+          "specialty"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::specialty.specialty",
+      "properties": {
+        "fields": [
+          "description",
+          "specialty_users"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::specialty.specialty",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::specialty.specialty",
+      "properties": {
+        "fields": [
+          "description",
+          "specialty_users"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::specialty.specialty",
+      "properties": {
+        "fields": [
+          "description",
+          "specialty_users"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.assets.copy-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.download",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.update",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.read",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    }
+  ]
+}
