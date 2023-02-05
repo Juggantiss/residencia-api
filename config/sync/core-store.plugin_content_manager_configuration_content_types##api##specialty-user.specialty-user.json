@@ -1,0 +1,99 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::specialty-user.specialty-user",
+  "value": {
+    "uid": "api::specialty-user.specialty-user",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "aspirant": {
+        "edit": {
+          "label": "aspirant",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "aspirant",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "specialty": {
+        "edit": {
+          "label": "specialty",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "id"
+        },
+        "list": {
+          "label": "specialty",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "aspirant",
+        "specialty",
+        "createdAt"
+      ],
+      "editRelations": [
+        "aspirant",
+        "specialty"
+      ],
+      "edit": []
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Aspirante",
+  "description": "Rol para los aspirantes nuevos",
+  "type": "aspirante",
+  "permissions": [
+    {
+      "action": "api::address.address.create"
+    },
+    {
+      "action": "api::address.address.findOne"
+    },
+    {
+      "action": "api::address.address.update"
+    },
+    {
+      "action": "api::aspirant.aspirant.create"
+    },
+    {
+      "action": "api::aspirant.aspirant.findOne"
+    },
+    {
+      "action": "api::aspirant.aspirant.update"
+    },
+    {
+      "action": "api::document.document.create"
+    },
+    {
+      "action": "api::document.document.findOne"
+    },
+    {
+      "action": "api::document.document.update"
+    },
+    {
+      "action": "api::request.request.create"
+    },
+    {
+      "action": "api::request.request.findOne"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.create"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.findOne"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.update"
+    },
+    {
+      "action": "api::specialty.specialty.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
+    },
+    {
+      "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}

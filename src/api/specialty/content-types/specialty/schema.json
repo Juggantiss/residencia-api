@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "specialties",
+  "info": {
+    "singularName": "specialty",
+    "pluralName": "specialties",
+    "displayName": "Specialty",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "specialty_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::specialty-user.specialty-user",
+      "mappedBy": "specialty"
+    }
+  }
+}

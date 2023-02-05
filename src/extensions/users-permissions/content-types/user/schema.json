@@ -71,10 +71,6 @@
       "type": "string",
       "required": true
     },
-    "gender": {
-      "type": "string",
-      "required": true
-    },
     "curp": {
       "type": "string",
       "required": true
@@ -90,6 +86,20 @@
     "secondLastName": {
       "type": "string",
       "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Hombre",
+        "Mujer"
+      ],
+      "required": true
+    },
+    "aspirant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::aspirant.aspirant",
+      "mappedBy": "user"
     }
   }
 }

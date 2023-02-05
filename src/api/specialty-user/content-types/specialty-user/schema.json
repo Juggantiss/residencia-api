@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "specialty_users",
+  "info": {
+    "singularName": "specialty-user",
+    "pluralName": "specialty-users",
+    "displayName": "SpecialtyUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aspirant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::aspirant.aspirant",
+      "mappedBy": "specialtyOption"
+    },
+    "specialty": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::specialty.specialty",
+      "inversedBy": "specialty_users"
+    }
+  }
+}
