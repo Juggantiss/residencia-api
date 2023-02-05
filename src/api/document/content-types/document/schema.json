@@ -49,6 +49,14 @@
       "relation": "oneToOne",
       "target": "api::aspirant.aspirant",
       "mappedBy": "document"
+    },
+    "pago": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
