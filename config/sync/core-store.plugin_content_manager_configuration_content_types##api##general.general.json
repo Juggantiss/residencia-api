@@ -1,0 +1,163 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::general.general",
+  "value": {
+    "uid": "api::general.general",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "cicloEscolar",
+      "defaultSortBy": "cicloEscolar",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "cicloEscolar": {
+        "edit": {
+          "label": "cicloEscolar",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cicloEscolar",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "numeroFicha": {
+        "edit": {
+          "label": "numeroFicha",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "numeroFicha",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "aula": {
+        "edit": {
+          "label": "aula",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "aula",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "diaExamen": {
+        "edit": {
+          "label": "diaExamen",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "diaExamen",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "horaExamen": {
+        "edit": {
+          "label": "horaExamen",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "horaExamen",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "cicloEscolar",
+        "numeroFicha",
+        "aula"
+      ],
+      "edit": [
+        [
+          {
+            "name": "cicloEscolar",
+            "size": 6
+          },
+          {
+            "name": "numeroFicha",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "aula",
+            "size": 6
+          },
+          {
+            "name": "diaExamen",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "horaExamen",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": []
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -91,6 +91,34 @@
           "sortable": true
         }
       },
+      "pago": {
+        "edit": {
+          "label": "pago",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "pago",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "ficha": {
+        "edit": {
+          "label": "ficha",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ficha",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -127,9 +155,6 @@
         "birthCertificate",
         "curp"
       ],
-      "editRelations": [
-        "aspirant"
-      ],
       "edit": [
         [
           {
@@ -150,7 +175,20 @@
             "name": "photo",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "pago",
+            "size": 6
+          },
+          {
+            "name": "ficha",
+            "size": 6
+          }
         ]
+      ],
+      "editRelations": [
+        "aspirant"
       ]
     }
   },

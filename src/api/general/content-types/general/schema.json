@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generals",
+  "info": {
+    "singularName": "general",
+    "pluralName": "generals",
+    "displayName": "Generals",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cicloEscolar": {
+      "type": "string",
+      "required": true
+    },
+    "numeroFicha": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "aula": {
+      "type": "string",
+      "required": true
+    },
+    "diaExamen": {
+      "type": "date",
+      "required": true
+    },
+    "horaExamen": {
+      "type": "time",
+      "required": true
+    }
+  }
+}

@@ -7,6 +7,9 @@
       "action": "api::address.address.create"
     },
     {
+      "action": "api::address.address.find"
+    },
+    {
       "action": "api::address.address.findOne"
     },
     {
@@ -14,6 +17,9 @@
     },
     {
       "action": "api::aspirant.aspirant.create"
+    },
+    {
+      "action": "api::aspirant.aspirant.find"
     },
     {
       "action": "api::aspirant.aspirant.findOne"
@@ -25,19 +31,25 @@
       "action": "api::document.document.create"
     },
     {
+      "action": "api::document.document.find"
+    },
+    {
       "action": "api::document.document.findOne"
     },
     {
       "action": "api::document.document.update"
     },
     {
-      "action": "api::request.request.create"
+      "action": "api::general.general.find"
     },
     {
-      "action": "api::request.request.findOne"
+      "action": "api::general.general.findOne"
     },
     {
       "action": "api::specialty-user.specialty-user.create"
+    },
+    {
+      "action": "api::specialty-user.specialty-user.find"
     },
     {
       "action": "api::specialty-user.specialty-user.findOne"
@@ -74,6 +86,12 @@
     },
     {
       "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
     },
     {
       "action": "plugin::users-permissions.user.me"

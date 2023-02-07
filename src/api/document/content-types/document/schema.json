@@ -51,12 +51,19 @@
       "mappedBy": "document"
     },
     "pago": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "ficha": {
       "allowedTypes": [
         "files"
       ],
       "type": "media",
-      "multiple": false,
-      "required": true
+      "multiple": false
     }
   }
 }
