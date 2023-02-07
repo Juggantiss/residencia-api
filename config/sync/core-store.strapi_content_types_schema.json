@@ -1268,7 +1268,7 @@
           "type": "relation",
           "relation": "oneToOne",
           "target": "api::aspirant.aspirant",
-          "inversedBy": "user"
+          "mappedBy": "user"
         },
         "createdAt": {
           "type": "datetime"
@@ -1412,7 +1412,7 @@
             "type": "relation",
             "relation": "oneToOne",
             "target": "api::aspirant.aspirant",
-            "inversedBy": "user"
+            "mappedBy": "user"
           }
         },
         "kind": "collectionType"
@@ -1572,18 +1572,12 @@
         },
         "schoolProcedence": {
           "type": "text",
-          "required": true
+          "required": false
         },
         "specialtyOption": {
           "type": "relation",
           "relation": "oneToOne",
           "target": "api::specialty-user.specialty-user",
-          "inversedBy": "aspirant"
-        },
-        "request": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "api::request.request",
           "inversedBy": "aspirant"
         },
         "document": {
@@ -1597,6 +1591,23 @@
           "relation": "oneToOne",
           "target": "api::address.address",
           "inversedBy": "aspirant"
+        },
+        "statusRequest": {
+          "type": "enumeration",
+          "enum": [
+            "registrado",
+            "generales",
+            "documentos",
+            "enviado",
+            "observaciones",
+            "aprobado",
+            "rechazado"
+          ],
+          "default": "registrado",
+          "required": true
+        },
+        "observations": {
+          "type": "text"
         },
         "createdAt": {
           "type": "datetime"
@@ -1652,18 +1663,12 @@
           },
           "schoolProcedence": {
             "type": "text",
-            "required": true
+            "required": false
           },
           "specialtyOption": {
             "type": "relation",
             "relation": "oneToOne",
             "target": "api::specialty-user.specialty-user",
-            "inversedBy": "aspirant"
-          },
-          "request": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::request.request",
             "inversedBy": "aspirant"
           },
           "document": {
@@ -1677,6 +1682,23 @@
             "relation": "oneToOne",
             "target": "api::address.address",
             "inversedBy": "aspirant"
+          },
+          "statusRequest": {
+            "type": "enumeration",
+            "enum": [
+              "registrado",
+              "generales",
+              "documentos",
+              "enviado",
+              "observaciones",
+              "aprobado",
+              "rechazado"
+            ],
+            "default": "registrado",
+            "required": true
+          },
+          "observations": {
+            "type": "text"
           }
         },
         "kind": "collectionType"
@@ -1741,6 +1763,21 @@
           "relation": "oneToOne",
           "target": "api::aspirant.aspirant",
           "mappedBy": "document"
+        },
+        "pago": {
+          "type": "media",
+          "multiple": false,
+          "required": true,
+          "allowedTypes": [
+            "files"
+          ]
+        },
+        "ficha": {
+          "allowedTypes": [
+            "files"
+          ],
+          "type": "media",
+          "multiple": false
         },
         "createdAt": {
           "type": "datetime"
@@ -1825,6 +1862,21 @@
             "relation": "oneToOne",
             "target": "api::aspirant.aspirant",
             "mappedBy": "document"
+          },
+          "pago": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": [
+              "files"
+            ]
+          },
+          "ficha": {
+            "allowedTypes": [
+              "files"
+            ],
+            "type": "media",
+            "multiple": false
           }
         },
         "kind": "collectionType"
@@ -1838,13 +1890,13 @@
       "actions": {},
       "lifecycles": {}
     },
-    "api::request.request": {
+    "api::general.general": {
       "kind": "collectionType",
-      "collectionName": "requests",
+      "collectionName": "generals",
       "info": {
-        "singularName": "request",
-        "pluralName": "requests",
-        "displayName": "Request",
+        "singularName": "general",
+        "pluralName": "generals",
+        "displayName": "Generals",
         "description": ""
       },
       "options": {
@@ -1852,25 +1904,26 @@
       },
       "pluginOptions": {},
       "attributes": {
-        "status": {
-          "type": "enumeration",
-          "enum": [
-            "registrado",
-            "generales",
-            "documentos",
-            "enviado",
-            "observaciones",
-            "aprobado",
-            "rechazado"
-          ],
-          "required": true,
-          "default": "registrado"
+        "cicloEscolar": {
+          "type": "string",
+          "required": true
         },
-        "aspirant": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "api::aspirant.aspirant",
-          "mappedBy": "request"
+        "numeroFicha": {
+          "type": "integer",
+          "default": 1,
+          "required": true
+        },
+        "aula": {
+          "type": "string",
+          "required": true
+        },
+        "diaExamen": {
+          "type": "date",
+          "required": true
+        },
+        "horaExamen": {
+          "type": "time",
+          "required": true
         },
         "createdAt": {
           "type": "datetime"
@@ -1906,11 +1959,11 @@
         }
       },
       "__schema__": {
-        "collectionName": "requests",
+        "collectionName": "generals",
         "info": {
-          "singularName": "request",
-          "pluralName": "requests",
-          "displayName": "Request",
+          "singularName": "general",
+          "pluralName": "generals",
+          "displayName": "Generals",
           "description": ""
         },
         "options": {
@@ -1918,35 +1971,36 @@
         },
         "pluginOptions": {},
         "attributes": {
-          "status": {
-            "type": "enumeration",
-            "enum": [
-              "registrado",
-              "generales",
-              "documentos",
-              "enviado",
-              "observaciones",
-              "aprobado",
-              "rechazado"
-            ],
-            "required": true,
-            "default": "registrado"
+          "cicloEscolar": {
+            "type": "string",
+            "required": true
           },
-          "aspirant": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::aspirant.aspirant",
-            "mappedBy": "request"
+          "numeroFicha": {
+            "type": "integer",
+            "default": 1,
+            "required": true
+          },
+          "aula": {
+            "type": "string",
+            "required": true
+          },
+          "diaExamen": {
+            "type": "date",
+            "required": true
+          },
+          "horaExamen": {
+            "type": "time",
+            "required": true
           }
         },
         "kind": "collectionType"
       },
       "modelType": "contentType",
-      "modelName": "request",
+      "modelName": "general",
       "connection": "default",
-      "uid": "api::request.request",
-      "apiName": "request",
-      "globalId": "Request",
+      "uid": "api::general.general",
+      "apiName": "general",
+      "globalId": "General",
       "actions": {},
       "lifecycles": {}
     },

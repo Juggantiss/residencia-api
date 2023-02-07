@@ -49,19 +49,19 @@
       "action": "api::document.document.update"
     },
     {
-      "action": "api::request.request.create"
+      "action": "api::general.general.create"
     },
     {
-      "action": "api::request.request.delete"
+      "action": "api::general.general.delete"
     },
     {
-      "action": "api::request.request.find"
+      "action": "api::general.general.find"
     },
     {
-      "action": "api::request.request.findOne"
+      "action": "api::general.general.findOne"
     },
     {
-      "action": "api::request.request.update"
+      "action": "api::general.general.update"
     },
     {
       "action": "api::specialty-user.specialty-user.create"

@@ -53,6 +53,9 @@
       ],
       "default": "registrado",
       "required": true
+    },
+    "observations": {
+      "type": "text"
     }
   }
 }

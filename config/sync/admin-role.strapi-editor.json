@@ -68,9 +68,9 @@
           "user",
           "schoolProcedence",
           "specialtyOption",
-          "request",
           "document",
-          "address"
+          "address",
+          "statusRequest"
         ]
       },
       "conditions": []
@@ -95,9 +95,9 @@
           "user",
           "schoolProcedence",
           "specialtyOption",
-          "request",
           "document",
-          "address"
+          "address",
+          "statusRequest"
         ]
       },
       "conditions": []
@@ -110,9 +110,9 @@
           "user",
           "schoolProcedence",
           "specialtyOption",
-          "request",
           "document",
-          "address"
+          "address",
+          "statusRequest"
         ]
       },
       "conditions": []
@@ -126,7 +126,8 @@
           "birthCertificate",
           "curp",
           "photo",
-          "aspirant"
+          "aspirant",
+          "pago"
         ]
       },
       "conditions": []
@@ -152,7 +153,8 @@
           "birthCertificate",
           "curp",
           "photo",
-          "aspirant"
+          "aspirant",
+          "pago"
         ]
       },
       "conditions": []
@@ -166,52 +168,8 @@
           "birthCertificate",
           "curp",
           "photo",
-          "aspirant"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::request.request",
-      "properties": {
-        "fields": [
-          "status",
-          "aspirant"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::request.request",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::request.request",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::request.request",
-      "properties": {
-        "fields": [
-          "status",
-          "aspirant"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::request.request",
-      "properties": {
-        "fields": [
-          "status",
-          "aspirant"
+          "aspirant",
+          "pago"
         ]
       },
       "conditions": []

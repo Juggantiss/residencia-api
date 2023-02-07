@@ -64,21 +64,6 @@
           "sortable": true
         }
       },
-      "request": {
-        "edit": {
-          "label": "request",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "id"
-        },
-        "list": {
-          "label": "request",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "document": {
         "edit": {
           "label": "document",
@@ -105,6 +90,34 @@
         },
         "list": {
           "label": "address",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "statusRequest": {
+        "edit": {
+          "label": "statusRequest",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "statusRequest",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "observations": {
+        "edit": {
+          "label": "observations",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "observations",
           "searchable": true,
           "sortable": true
         }
@@ -145,20 +158,29 @@
         "schoolProcedence",
         "specialtyOption"
       ],
-      "editRelations": [
-        "user",
-        "specialtyOption",
-        "request",
-        "document",
-        "address"
-      ],
       "edit": [
         [
           {
             "name": "schoolProcedence",
             "size": 6
+          },
+          {
+            "name": "statusRequest",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "observations",
+            "size": 6
           }
         ]
+      ],
+      "editRelations": [
+        "user",
+        "specialtyOption",
+        "document",
+        "address"
       ]
     }
   },

@@ -68,9 +68,10 @@
           "user",
           "schoolProcedence",
           "specialtyOption",
-          "request",
           "document",
-          "address"
+          "address",
+          "statusRequest",
+          "observations"
         ]
       },
       "conditions": []
@@ -95,9 +96,10 @@
           "user",
           "schoolProcedence",
           "specialtyOption",
-          "request",
           "document",
-          "address"
+          "address",
+          "statusRequest",
+          "observations"
         ]
       },
       "conditions": []
@@ -110,9 +112,10 @@
           "user",
           "schoolProcedence",
           "specialtyOption",
-          "request",
           "document",
-          "address"
+          "address",
+          "statusRequest",
+          "observations"
         ]
       },
       "conditions": []
@@ -126,7 +129,9 @@
           "birthCertificate",
           "curp",
           "photo",
-          "aspirant"
+          "aspirant",
+          "pago",
+          "ficha"
         ]
       },
       "conditions": []
@@ -152,7 +157,9 @@
           "birthCertificate",
           "curp",
           "photo",
-          "aspirant"
+          "aspirant",
+          "pago",
+          "ficha"
         ]
       },
       "conditions": []
@@ -166,52 +173,63 @@
           "birthCertificate",
           "curp",
           "photo",
-          "aspirant"
+          "aspirant",
+          "pago",
+          "ficha"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::request.request",
+      "subject": "api::general.general",
       "properties": {
         "fields": [
-          "status",
-          "aspirant"
+          "cicloEscolar",
+          "numeroFicha",
+          "aula",
+          "diaExamen",
+          "horaExamen"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::request.request",
+      "subject": "api::general.general",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::request.request",
+      "subject": "api::general.general",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::request.request",
+      "subject": "api::general.general",
       "properties": {
         "fields": [
-          "status",
-          "aspirant"
+          "cicloEscolar",
+          "numeroFicha",
+          "aula",
+          "diaExamen",
+          "horaExamen"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::request.request",
+      "subject": "api::general.general",
       "properties": {
         "fields": [
-          "status",
-          "aspirant"
+          "cicloEscolar",
+          "numeroFicha",
+          "aula",
+          "diaExamen",
+          "horaExamen"
         ]
       },
       "conditions": []
